@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     font-family: Helvetica, Arial, Verdana, sans-serif;
     --primary: #666667;
-    --secondary: #666667;
+    --secondary: #191d24;
     --background: white;
     --navbar: white;
     --text: #666667;
@@ -70,6 +70,10 @@ h6 {
 p {
     ${BODY_NAV_WIDTH}
 }
+
+a {
+    color: var(--text);
+}
 `;
 
 export const MainImg = styled.img`
@@ -92,10 +96,14 @@ export const Footer0 = styled(Footer)`
     margin-top: 1rem;
     font-size: .8rem;
     background-color: #34424c;
+
+    & a {
+        color: var(--backgroud);
+    }
 `;
 
 export const Footer1 = styled(Footer)`
     color: var(--primary);
     font-size: .75rem;
-    background-color: #191d24;
+    background-color: var(--secondary);
 `;

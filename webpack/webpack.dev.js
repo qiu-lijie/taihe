@@ -9,5 +9,6 @@ module.exports = merge(common, {
         static: path.join(__dirname, '../public/'),
         port: 8000,
         hot: true,
+        historyApiFallback: true,
     },
 });

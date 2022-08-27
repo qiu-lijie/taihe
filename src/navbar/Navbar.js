@@ -29,9 +29,9 @@ const NAV_ITEMS = [
     }, {
         text: 'TAIHE CARE',
         url: 'care/',
-    // }, { !!!TODO
-    //     text: 'CONTACT US',
-    //     url: 'contact/',
+    }, {
+        text: 'CONTACT US',
+        url: 'contact/',
     },
 ];
 
