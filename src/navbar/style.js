@@ -104,6 +104,7 @@ export const NavIconLink = styled(NavLink)`
         color: var(--primary);
         padding: .5rem;
         margin: .5rem;
+        width: 45vw;
         &::after {
             content: '';
         }

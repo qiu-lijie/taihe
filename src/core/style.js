@@ -57,10 +57,10 @@ export const ModalContent = styled.main`
     align-items: center;
 
     @media ${MAX_WIDTH} {
-        position: absolute;
-        top: calc(var(--nav-height) + 10px);
-        bottom: -200px;
-        padding-bottom: 200px;
+        /* position: absolute; */
+        /* top: calc(var(--nav-height) + 10px); */
+        /* bottom: -200px; */
+        /* padding-bottom: 200px; */
         width: 100vw;
         box-sizing: border-box;
         animation: ${popup} 400ms ease-out forwards;
@@ -106,8 +106,9 @@ export const CarouselCells = styled.div`
     max-width: 80vw;
     max-height: 80vh;
     display: grid;
+    align-content: center;
     grid-template-columns: 1fr;
-    cursor: pointer;
+    overflow: hidden;
 
     @media ${MAX_WIDTH} {
         max-width: 100vw;
@@ -154,6 +155,7 @@ export const CarouselDots = styled.div`
     bottom: 2rem;
     height: 1rem;
     margin-bottom: -1rem;
+    overflow: hidden;
 `;
 
 export const Dot = styled.span`

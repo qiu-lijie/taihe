@@ -16,11 +16,6 @@ export const Carousel = ({ images }) => {
     const [initPos, setInitPos] = useState({ x: 0, y: 0 });
     const cellsRef = useRef();
 
-    const openImage = (e) => {
-        if (e.target !== e.currentTarget) return;
-        setOpenedImg(images[currIndex]);
-    };
-
     const showCell = (idx) => {
         if (idx >= images.length)
             idx = 0;
@@ -45,7 +40,7 @@ export const Carousel = ({ images }) => {
 
     return <>
         <CarouselDiv>
-            <CarouselCells onClick={openImage} ref={cellsRef}
+            <CarouselCells ref={cellsRef}
                 onTouchStart={lockPos} onTouchEnd={swipe}>
                 {images.map((image, i) => (
                     <CarouselCell key={i} index={i} currIndex={currIndex}

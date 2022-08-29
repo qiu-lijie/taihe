@@ -7,6 +7,7 @@ export const Grid = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     width: 100%;
+    margin-top: 1.5rem;
     ${BODY_NAV_WIDTH}
     @media ${MAX_WIDTH} {
         grid-template-columns: repeat(1, 1fr);
@@ -16,6 +17,7 @@ export const Grid = styled.div`
 export const GridItem = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
 `;
 
 export const ProjThumbnail = styled.img`
@@ -53,6 +55,7 @@ export const Form = styled.form`
 
     textarea {
         height: 8rem;
+        font-family: inherit;
     }
 
     button {
